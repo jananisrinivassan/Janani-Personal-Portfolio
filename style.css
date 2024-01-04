@@ -345,16 +345,20 @@ html {
 .description-paragraph {
     font-size: 14px;
     color: #333;
+    text-align: right;
 }
-
+.description-paragraph span {
+    font-weight: bold;
+    margin-top: 20px;
+}
 .project-gallery {
     display: right;
     flex-wrap: wrap right;
     justify-content: space-around;
     align-items: center;
     display: grid;
-    grid-template-columns: repeat(2, 10fr); /* Two columns with equal width */
-    gap: 20px; /* Add some space between columns */
+    grid-template-columns: repeat(2, 100fr); /* Two columns with equal width */
+    gap: -200px; /* Add some space between columns */
 }
 
 .project {
@@ -365,8 +369,8 @@ html {
     cursor: pointer;
     flex: 0 0 auto;
     scroll-snap-align: start; /* Align each project to the start */
-    margin-right: 250px; /* Add some spacing between projects */
-    margin-left: 50px;
+    margin-right: 300px; /* Add some spacing between projects */
+    margin-left: -200px;
     margin-bottom: 100px; 
 }
 
@@ -379,7 +383,7 @@ html {
 }
 
 .project-details {
-    position: absolute;
+    position: relative;
     bottom: -150px; /* Adjust the distance from the image */
     top: 10px;
     left: 110%;
@@ -387,9 +391,11 @@ html {
     transform: translateX(-50%);
     background-color: black; /* Change color as desired */
     border-radius: 10px;
-    padding: 60px;
+    padding: 50px;
     text-align: right;
     text-align: 40px;
+    padding-right: 100px;
+    padding-left: 10px;
     opacity: 1; /* Hide by default */
     transition: none;
     width: 300px; /* Adjust the width */
@@ -410,7 +416,6 @@ html {
     font-size: 18px;
     margin-bottom: 5px;
 }
-
 
 
 /* Projects Animation Slide */
