@@ -127,6 +127,17 @@ function sendMail(){
         email : document.getElementById("email").value,
         message : document.getElementById("message").value,
     };
+
+    const serviceID = "service_xhdvnv3";
+    const templateID = "template_73pziqs";
+
+    emailjs.send(serviceID,templateID,params)
+    .then((rest) => {
+        document.getElementById("name").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("message").value = "";
+    })
+    .catch ((err) => console.log(err));
 }
 
-const serviceID = "service_xhdvnv3";
+
