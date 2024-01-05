@@ -80,21 +80,7 @@ skillBars.forEach(skill => {
 });
 
 
-// Personal Sections
-// Add event listeners for hover effect
-const images = document.querySelectorAll('.personal-image');
-
-images.forEach(image => {
-    image.addEventListener('mouseover', () => {
-        image.style.filter = 'brightness(150%)'; // Adjust brightness on hover
-    });
-
-    image.addEventListener('mouseout', () => {
-        image.style.filter = 'brightness(100%)'; // Reset brightness on mouseout
-    });
-});
-
-
+// Personal Section
 
 
 
