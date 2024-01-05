@@ -47,7 +47,7 @@ nav ul li{
 nav ul li a{
     color: #6b6767;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px;
     position: relative;
 }
 
@@ -267,7 +267,7 @@ html {
 
 .skills-section h1 {
     margin-top: -100px;
-    color: #FF6000; /* Change the title color */
+    color: #776B5D; /* Change the title color */
     font-size: 36px; /* Adjust the title font size */
 }
 
@@ -288,10 +288,12 @@ html {
 
 .skill-title h1{
     font-size: 30px;
+    color: #6C3428;
 }
 
 .sub-title h2{
     font-size: 1px;
+    color: #6C3428;
 }
 
 .skill-name {
@@ -305,7 +307,7 @@ html {
 
 .skill-bar {    
     width: 50%;
-    background-color: #ddd;
+    background-color: #C08261;
     height: 20px;
     border-radius: 5px;
     margin-top: -10px;
@@ -316,7 +318,7 @@ html {
 .skill-progress {
     width: 50px; 
     height: 100%;
-    background-color: #FF6000;
+    background-color: #FFA559;
     border-radius: 5px;
     text-align: center;
     line-height: 20px;
@@ -334,11 +336,14 @@ html {
     margin-top: -100px;
     font-size: 35px;
     text-align: center; 
+    color: #645242;
 }
 
+/* Personal Section Images */
 .personal-images {
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 .personal-image {
@@ -502,7 +507,6 @@ html {
     font-weight: bold;
     cursor: pointer;
 }
-
 
 /* Image Scroll Animation Icon */
 
