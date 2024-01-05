@@ -35,8 +35,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-
-
 // This is for the ABOUT ME Animation 
 function typeWriter(text, i, id) 
 {
