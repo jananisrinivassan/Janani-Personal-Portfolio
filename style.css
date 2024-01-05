@@ -346,12 +346,24 @@ html {
 .description-paragraph {
     font-size: 14px;
 }
+
 .description-paragraph span {
     font-weight: bold;
-    margin-top: 20px;
-   
-   
+    margin-top: 30px;
 }
+
+.technologies-section {
+    margin-top: 20px; /* Add space above the technologies section */
+}
+
+.technologies-paragraph span {
+    font-weight: bold;    
+}
+
+.technologies-paragraph{
+    font-size: 14px;  
+}
+
 .project-gallery {
     display: right;
     flex-wrap: wrap right;
