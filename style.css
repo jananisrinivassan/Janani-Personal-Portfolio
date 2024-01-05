@@ -338,24 +338,28 @@ html {
     text-align: center; 
     color: #645242;
 }
+.personal-content {
+    text-align: center;
+}
 
-/* Personal Section Images */
 .personal-images {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     margin-top: 50px;
 }
 
 .personal-image {
-    width: 200px; /* Adjust the size as needed */
-    height: 200px; /* Adjust the size as needed */
-    transition: transform 0.3s ease;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    transition: filter 0.3s ease; /* Transition for the hover effect */
 }
 
 .personal-image:hover {
-    transform: scale(1.1);
+    filter: brightness(150%); /* Adjust the brightness to make the image light up on hover */
 }
+
 
 /* Projects Section */
 .projects-section {
@@ -597,7 +601,7 @@ html {
 }
 
 .contact-message{
-    color: #6C3428;
+    color: 6C3428;
 }
 /* Contacts Icons CSS */
 .social-icons {

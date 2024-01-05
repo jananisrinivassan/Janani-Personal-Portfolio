@@ -102,7 +102,7 @@ closeBtn.onclick = function() {
 }
 
 
-// Contacts Section Sending Succes Message
+// Contacts Section Sending Success Message
 document.getElementById('myForm').addEventListener('submit', function(event) {
     // Prevent the default form submission
     event.preventDefault();
