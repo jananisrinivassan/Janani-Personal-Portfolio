@@ -120,4 +120,13 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
     }, 3000);
 });
 
-// Contacts Section Getting the Data and sending to my email address
+// Contacts Section - Connection with EmailJS to get sent to my email address
+function sendMail(){
+    var params = {
+        name : document.getElementById("name").value,
+        email : document.getElementById("email").value,
+        message : document.getElementById("message").value,
+    };
+}
+
+const serviceID = "service_xhdvnv3";
