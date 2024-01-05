@@ -18,7 +18,6 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 // scroll animation for icon 
-
 document.addEventListener('DOMContentLoaded', function () {
     const scrollToTopLink = document.querySelector('.scroll-top-link');
     scrollToTopLink.addEventListener('click', function (e) {
@@ -68,7 +67,6 @@ function startTyping()
 window.onload = startTyping;
 
 
-
 // Animation Skill Bars
 const skillBars = document.querySelectorAll('.skill-progress');
 
@@ -80,6 +78,26 @@ skillBars.forEach(skill => {
         skill.style.width = progress; // Animate width to the actual progress percentage
     }, 500); // You can adjust the delay as needed
 });
+
+
+// Personal Sections
+// Add event listeners for hover effect
+const images = document.querySelectorAll('.personal-image');
+
+images.forEach(image => {
+    image.addEventListener('mouseover', () => {
+        image.style.filter = 'brightness(150%)'; // Adjust brightness on hover
+    });
+
+    image.addEventListener('mouseout', () => {
+        image.style.filter = 'brightness(100%)'; // Reset brightness on mouseout
+    });
+});
+
+
+
+
+
 
 // Get the modal
 var modal = document.getElementById("myModal");
@@ -100,7 +118,6 @@ var closeBtn = document.getElementsByClassName("close")[0];
 closeBtn.onclick = function() {
     modal.style.display = "none";
 }
-
 
 // Contacts Section Sending Success Message
 document.getElementById('myForm').addEventListener('submit', function(event) {

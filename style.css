@@ -338,26 +338,20 @@ html {
     text-align: center; 
     color: #645242;
 }
-.personal-content {
-    text-align: center;
-}
 
 .personal-images {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 50px;
+    justify-content: space-around;
 }
 
 .personal-image {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    transition: filter 0.3s ease; /* Transition for the hover effect */
+    width: 200px; /* Adjust the size as needed */
+    height: 200px; /* Adjust the size as needed */
+    transition: transform 0.3s ease;
 }
 
 .personal-image:hover {
-    filter: brightness(150%); /* Adjust the brightness to make the image light up on hover */
+    transform: scale(1.1);
 }
 
 
