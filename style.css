@@ -333,13 +333,14 @@ html {
 }
 
 .section-title{
-    margin-top: -100px;
+    margin-top: -150px;
     font-size: 35px;
     text-align: center; 
     color: #645242;
 }
 
 .personal-images {
+ 
     display: flex;
     justify-content: space-around;
 }
