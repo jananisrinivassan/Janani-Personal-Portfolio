@@ -329,26 +329,43 @@ html {
 
 /* Section Personal */
 .personal-section{
-    padding: 200px;  
+    padding: 300px ; /* Adjust the top and bottom padding as needed */
+    text-align: center; 
 }
 
 .section-title{
-    margin-top: -150px;
+    margin-top: -250px;
+    margin-bottom: 15px;
     font-size: 35px;
     text-align: center; 
     color: #645242;
 }
 
-.personal-images {
- 
+.personal-images { 
     display: flex;
+    flex-direction: horizontal;
+    align-items: center;
     justify-content: space-around;
 }
 
 .personal-image {
     width: 200px; /* Adjust the size as needed */
     height: 200px; /* Adjust the size as needed */
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer; /* Shows the pointer cursor on hover */
+    margin-bottom: 50px; /* Adds space between images */
     transition: transform 0.3s ease;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.personal-image:first-child {
+    margin-top: 300px; /* Adjust this value to move the first image down */
+}
+
+.personal-image:last-child {
+    margin-top: 300px; /* Adjust this value to move the third image down */
 }
 
 .personal-image:hover {
