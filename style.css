@@ -340,6 +340,7 @@ html {
     top: -30px;
     left: 100px;
     color: grey;
+  
 }
 
 .description-paragraph {
@@ -348,6 +349,7 @@ html {
 .description-paragraph span {
     font-weight: bold;
     margin-top: 20px;
+   
    
 }
 .project-gallery {
