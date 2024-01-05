@@ -102,7 +102,7 @@ closeBtn.onclick = function() {
 }
 
 
-// Contacts Section
+// Contacts Section Sending Succes Message
 document.getElementById('myForm').addEventListener('submit', function(event) {
     // Prevent the default form submission
     event.preventDefault();
@@ -119,3 +119,5 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
         successMessage.style.display = 'none';
     }, 3000);
 });
+
+// Contacts Section Getting the Data and sending to my email address
