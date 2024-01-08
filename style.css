@@ -135,7 +135,7 @@ nav ul li a:hover::after{
 }
 
 .sub-title{
-    font-size: 60px;
+    font-size: 100px;
     font-weight: 600;
     color: #3D0C11;
 }
@@ -329,12 +329,12 @@ html {
 
 /* Section Personal */
 .personal-section{
-    padding: 300px ; /* Adjust the top and bottom padding as needed */
+    padding: 250px ; /* Adjust the top and bottom padding as needed */
     text-align: center; 
 }
 
 .section-title{
-    margin-top: -250px;
+    margin-top: -200px;
     margin-bottom: 15px;
     font-size: 35px;
     text-align: center; 
@@ -360,18 +360,53 @@ html {
     margin-right: 80px;
 }
 
-.personal-image:first-child {
-    margin-top: 300px; /* Adjust this value to move the first image down */
+.first-image {
+    margin-top: 150px; /* Adjust this value to move the first image further down */
 }
 
-.personal-image:last-child {
-    margin-top: 300px; /* Adjust this value to move the third image down */
+.last-image {
+    margin-top: 150px; /* Adjust this value to move the third image further down */
 }
+
 
 .personal-image:hover {
     transform: scale(1.1);
 }
 
+/* Change the color of the image titles */
+h2 {
+    color: #004225; /* Update with your desired color */
+    font-size: 40px; /* Adjust the font size if needed */
+    margin-bottom: 10px; /* Add space below the title */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+/* Change the color of the sentences */
+p {
+    color: #994D1C; /* Update with your desired color */
+    margin-bottom: 34px; /* Add space below the sentences */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px; /* Adjust the font size if needed */
+}
+
+/* Typing animation styles */
+.typewriter {
+    overflow: hidden; /* Ensures the content is clipped */
+    white-space: nowrap; /* Keeps the content in one line */
+    letter-spacing: 0.15em; /* Adjust the spacing between letters */
+    animation: typing 3s steps(40) 1s forwards; /* Adjust animation duration and steps as needed */
+}
+
+/* Animation keyframes for typing effect */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: auto;
+    }
+}
 
 /* Projects Section */
 .projects-section {
@@ -720,6 +755,26 @@ html {
         width: 100%; /* Fill width on smaller screens */
         margin-top: 5px; /* Adjust margin for smaller screens */
     }
+    
+    .personal-section {
+        padding: 100px 20px; /* Adjust padding for smaller screens */
+    }
+    .section-title {
+        margin-top: -100px; /* Adjust margin for smaller screens */
+        font-size: 25px; /* Adjust font size for smaller screens */
+    }
+    .personal-images {
+        flex-direction: column; /* Stack images vertically on smaller screens */
+        align-items: center; /* Center images horizontally */
+    }
+    .personal-image {
+        margin: 20px 0; /* Adjust margin between images */
+    }
+    h2,
+    p {
+        font-size: 18px; /* Adjust font size for smaller screens */
+        margin-bottom: 20px; /* Add space between title and sentences */
+    }
 
     .project {
         flex-direction: column;
@@ -734,6 +789,34 @@ html {
         margin-bottom: 10px; /* Add space between image and description in column layout */
     }
 
+    .project-details {
+        position: static;
+        width: 100%;
+        opacity: 1;
+        padding: 15px;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+    
+    .projects-section {
+        padding: 100px 20px; /* Adjust padding for smaller screens */
+    }
+    .projects-title {
+        margin-top: -100px; /* Adjust margin for smaller screens */
+        font-size: 25px; /* Adjust font size for smaller screens */
+    }
+    .project-gallery {
+        grid-template-columns: 100%; /* Display projects in a single column */
+        gap: 20px; /* Adjust the gap between projects */
+    }
+    .project {
+        margin: 50px 0; /* Adjust margin for smaller screens */
+    }
+    .project-image {
+        width: 100%; /* Adjust image width for smaller screens */
+        height: auto; /* Maintain aspect ratio */
+        border-radius: 5px; /* Add border radius */
+    }
     .project-details {
         position: static;
         width: 100%;

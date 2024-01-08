@@ -79,10 +79,54 @@ skillBars.forEach(skill => {
     }, 500); // You can adjust the delay as needed
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    const imageContainers = document.querySelectorAll('.personal-image-container');
+    let descriptionArea;
 
-// Personal Section
+    // Define sentences for each image title
+    const imageSentences = {
+        'Yoga': '"Embracing the calming discipline of yoga, fostering balance and well-being for the mind and body."',
+        'Technology': '"Explore new technologies while embracing the world of innovation and learning."',
+        'Travel': '"Passionate about embarking on adventurous journeys, exploring diverse cultures through travel experiences."'
+    };
 
+    imageContainers.forEach(container => {
+        container.addEventListener('click', function() {
+            const title = this.getAttribute('data-desc'); // Get the data-desc attribute (title)
+            const description = imageSentences[title]; // Get the corresponding sentence
 
+            if (descriptionArea) {
+                descriptionArea.remove();
+                descriptionArea = null;
+            }
+
+            descriptionArea = showDescription(title, description);
+
+            setTimeout(() => {
+                descriptionArea.remove();
+                descriptionArea = null;
+            }, 5000); // Adjust the duration (in milliseconds) before the description disappears
+        });
+    });
+
+    function showDescription(title, description) {
+        const titleElement = document.createElement('h2');
+        titleElement.textContent = title;
+
+        const descElement = document.createElement('p');
+        descElement.textContent = description;
+
+        const newDescriptionArea = document.createElement('div');
+        newDescriptionArea.classList.add('description');
+        newDescriptionArea.appendChild(titleElement);
+        newDescriptionArea.appendChild(descElement);
+
+        const personalContent = document.querySelector('.personal-content');
+        personalContent.appendChild(newDescriptionArea);
+
+        return newDescriptionArea;
+    }
+});
 
 
 // Get the modal
