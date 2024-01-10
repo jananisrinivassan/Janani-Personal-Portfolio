@@ -175,7 +175,7 @@ function sendMail(){
         message : document.getElementById("message").value,
     };
 
-    const serviceID = "service_xhdvnv3";
+    const serviceID = "service_3sznct4";
     const templateID = "template_73pziqs";
 
     emailjs.send(serviceID,templateID,params)

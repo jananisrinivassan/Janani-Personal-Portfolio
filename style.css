@@ -529,6 +529,11 @@ p {
     display: block; /* Show project info on click */
 }
 
+/* Styling for the project details container */
+.project-details {
+    position: relative;
+}
+
 /* CSS for the modal */
 .modal {
     display: none;
