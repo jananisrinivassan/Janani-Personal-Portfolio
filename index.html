@@ -144,7 +144,8 @@
         <div class="projects-container">
              <!-- project 1  -->
         <div class="project">
-            <img src="Images/Project 1.png" alt="Project Image" class="project-image" onclick="openModal('./Images/Project 1.png')">        
+            <img src="Images/Project 1.png" alt="Project Image" class="project-image">   
+            <button class="open-project-button" onclick="redirectToProject('project1.html')">Open</button> 
             <div class="project-details">
                 <h3 class="project-title">naviApp</h3>
                 <p  class="description-paragraph">
@@ -355,7 +356,10 @@
         &copy; 2023 jananisrinivassan
     </div>
 </footer>
+
 <script src="script.js"></script>
+
+<!-- EmailJS -->
 <script type="text/javascript"
 src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
 </script>
@@ -365,5 +369,10 @@ emailjs.init("_1OM-ORmRLGdw-w7U");
 })();
 </script>
 
+<script>
+    function redirectToProject(projectUrl) {
+        window.location.href = projectUrl;
+    }
+</script>
 </body>
 </html>
